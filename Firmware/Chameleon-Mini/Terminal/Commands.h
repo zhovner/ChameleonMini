@@ -45,6 +45,9 @@ typedef struct {
 #define COMMAND_VERSION     "VERSION"
 CommandStatusIdType CommandGetVersion(char* OutParam);
 
+#define COMMAND_FUSES     "FUSES"
+CommandStatusIdType CommandGetFuses(char* OutParam);
+
 #define COMMAND_CONFIG      "CONFIG"
 CommandStatusIdType CommandExecConfig(char* OutMessage);
 CommandStatusIdType CommandGetConfig(char* OutParam);
