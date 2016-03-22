@@ -42,6 +42,12 @@ const PROGMEM CommandEntryType CommandTable[] = {
     .GetFunc    = CommandGetVersion,
   },
   {
+    .Command    = COMMAND_FUSES,
+    .ExecFunc   = NO_FUNCTION,
+    .SetFunc    = NO_FUNCTION,
+    .GetFunc    = CommandGetFuses,
+  },
+  {
     .Command    = COMMAND_CONFIG,
     .ExecFunc   = CommandExecConfig,
     .SetFunc    = CommandSetConfig,
