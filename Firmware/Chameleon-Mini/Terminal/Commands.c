@@ -28,8 +28,8 @@ CommandStatusIdType CommandGetVersion(char* OutParam)
 CommandStatusIdType CommandGetFuses(char* OutParam)
 {
   snprintf_P(OutParam, TERMINAL_BUFFER_SIZE, PSTR(
-    "FUSEBIT0: %S, FUSEBIT1: %S, FUSEBIT2: %S, FUSEBIT3: %S, FUSEBIT4: %S, FUSEBIT5: %S"
-    ), TODO
+    "FUSEBIT0: %S, FUSEBIT4: %S"
+    ), FUSEBIT0, FUSEBIT4 
   );
 
   return COMMAND_INFO_OK_WITH_TEXT_ID;
